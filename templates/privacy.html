@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Finly{% endblock %}
+
+{% block content %}
+
+<section class="auth-section">
+    <div class="auth-container" style="max-width: 720px;">
+
+        <div class="auth-header">
+            <h1 class="auth-title">Privacy Policy</h1>
+            <p class="auth-subtitle">Last updated: May 2025</p>
+        </div>
+
+        <div class="auth-card" style="text-align: left;">
+
+            <h2>1. Data We Collect</h2>
+            <p>When you create an account, we collect your email address and a securely hashed password. When you use Finly, we store the expense records you add — including amounts, categories, dates, and any descriptions you provide. We do not collect payment information, location data, or any other personal data.</p>
+
+            <h2>2. How We Use Your Data</h2>
+            <p>Your data is used solely to provide the Finly service — displaying your expense history, generating summaries, and enabling filters. We do not use your data for advertising, profiling, or any purpose beyond operating the app for your benefit.</p>
+
+            <h2>3. Data Storage</h2>
+            <p>Your data is stored in a secured database. Passwords are never stored in plain text; they are hashed using industry-standard algorithms before storage. We take reasonable technical measures to protect your data from unauthorised access, though no system is completely immune to risk.</p>
+
+            <h2>4. Third Party Services</h2>
+            <p>Finly does not share your personal data with third parties. We do not integrate with advertising networks, analytics providers, or external data brokers. Any future integrations will be disclosed in an updated version of this policy.</p>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have questions or concerns about this Privacy Policy or how your data is handled, please reach out at <a href="mailto:privacy@finly.app">privacy@finly.app</a>. We will respond within a reasonable timeframe.</p>
+
+        </div>
+
+        <p class="auth-switch">
+            <a href="{{ url_for('landing') }}">← Back to home</a>
+        </p>
+
+    </div>
+</section>
+
+{% endblock %}
